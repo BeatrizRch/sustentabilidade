@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>EcoPlaneta</h1>
+            <nav>
+                <ul>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#temas">Temas Principais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Construindo um Futuro Sustentável</h2>
+            <p>Conhecimento, inovação e artigos científicos para transformar a nossa relação com o meio ambiente.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="temas" class="grid-cards">
+            
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&auto=format&fit=crop" alt="Pegada de Carbono">
+                <div class="card-content">
+                    <h3>Pegada de Carbono</h3>
+                    <p>A pegada de carbono mede a quantidade total de gases de efeito estufa emitidos por atividades humanas. Reduzir essa marca é essencial para conter as mudanças climáticas globais.</p>
+                    <button onclick="toggleDetalhes('detalhes-carbono')">Saiba mais</button>
+                    <div id="detalhes-carbono" class="detalhes escondido">
+                        <p><strong>Impacto:</strong> Adoção de transporte limpo, eficiência energética e consumo consciente ajudam na mitigação dos impactos.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&auto=format&fit=crop" alt="Plástico Verde">
+                <div class="card-content">
+                    <h3>Plástico Verde</h3>
+                    <p>Produzido a partir de fontes renováveis (como a cana-de-açúcar), o plástico verde possui pegada de carbono negativa, absorvendo CO₂ durante seu ciclo de cultivo.</p>
+                    <button onclick="toggleDetalhes('detalhes-plastico')">Saiba mais</button>
+                    <div id="detalhes-plastico" class="detalhes escondido">
+                        <p><strong>Inovação:</strong> Mantém as mesmas propriedades do plástico tradicional, porém reduz drasticamente a dependência do petróleo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&auto=format&fit=crop" alt="Logística Reversa">
+                <div class="card-content">
+                    <h3>Logística Reversa</h3>
+                    <p>Instrumento de desenvolvimento econômico e social caracterizado por ações para viabilizar a coleta e restituição dos resíduos sólidos aos setores empresariais.</p>
+                    <button onclick="toggleDetalhes('detalhes-logistica')">Saiba mais</button>
+                    <div id="detalhes-logistica" class="detalhes escondido">
+                        <p><strong>Aplicação:</strong> Crucial para a gestão de embalagens, eletrônicos e materiais pós-consumo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=600&auto=format&fit=crop" alt="Economia Circular">
+                <div class="card-content">
+                    <h3>Economia Circular</h3>
+                    <p>Modelo de produção e consumo que envolve o compartilhamento, reutilização, reparo e reciclagem de materiais e produtos existentes pelo maior tempo possível.</p>
+                    <button onclick="toggleDetalhes('detalhes-economia')">Saiba mais</button>
+                    <div id="detalhes-economia" class="detalhes escondido">
+                        <p><strong>Objetivo:</strong> Eliminar o desperdício desde a fase de design de produtos e serviços.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=600&auto=format&fit=crop" alt="Descarte de Pilhas e Baterias">
+                <div class="card-content">
+                    <h3>Pilhas e Baterias</h3>
+                    <p>O descarte incorreto desses materiais libera metais pesados perigosos (como chumbo, cádmio e mercúrio) no solo e nos lençóis freáticos.</p>
+                    <button onclick="toggleDetalhes('detalhes-pilhas')">Saiba mais</button>
+                    <div id="detalhes-pilhas" class="detalhes escondido">
+                        <p><strong>Ação:</strong> Devem ser descartadas exclusivamente em pontos de coleta específicos (PEVs) e postos autorizados.</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="artigos" class="secao-artigos">
+            <h2>Artigos Científicos e Referências</h2>
+            <div class="lista-artigos">
+                <div class="artigo-item">
+                    <h4>A Economia Circular como Estratégia de Sustentabilidade</h4>
+                    <p><strong>Resumo:</strong> Análise das transições industriais para modelos circulares e redução de resíduos urbanos.</p>
+                    <a href="https://www.scielo.br" target="_blank" class="link-artigo">Acessar Estudo (SciELO)</a>
+                </div>
+                <div class="artigo-item">
+                    <h4>Avaliação do Ciclo de Vida e Pegada de Carbono em Polímeros Renováveis</h4>
+                    <p><strong>Resumo:</strong> Estudo comparativo entre resinas fósseis tradicionais e o polietileno de origem renovável (Plástico Verde).</p>
+                    <a href="https://www.scielo.br" target="_blank" class="link-artigo">Acessar Estudo (SciELO)</a>
+                </div>
+                <div class="artigo-item">
+                    <h4>Logística Reversa de Resíduos Eletroeletrônicos no Brasil</h4>
+                    <p><strong>Resumo:</strong> Desafios regulatórios e operacionais no descarte e destinação adequada de pilhas, baterias e hardware.</p>
+                    <a href="https://www.scielo.br" target="_blank" class="link-artigo">Acessar Estudo (SciELO)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <p>&copy; 2026 Portal EcoPlaneta — Projeto de Sustentabilidade.</p>
+            <!-- Cole o link do repositório/site publicado abaixo nos comentários do seu projeto -->
+            <p>Repositório do Projeto: <a href="https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO" id="github-link" target="_blank">Link no GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
